@@ -1,0 +1,19 @@
+
+server:
+port: 1299
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: aigou-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/hpyao/microservice-config.git   #TODO 创建github仓库修改路劲
+          username: 2698084903@qq.com
+          password: gupen0320
